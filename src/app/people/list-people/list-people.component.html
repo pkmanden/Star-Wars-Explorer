@@ -1,0 +1,13 @@
+<div>
+    <mat-nav-list role="list">
+        
+        <a mat-list-item *ngFor='let people of peopleData; let i = index' [routerLink]="['/people', (i+1)]"> 
+            <img matListItemAvatar src="assets/account_circle.png" alt="account_circle">
+            {{ people['name'] }} 
+        
+            <!-- <mat-divider></mat-divider> -->
+        </a>
+        
+        <!-- <mat-list-item role="listitem" *ngFor='let people of peopleData'> {{ people['name'] }}</mat-list-item> -->
+    </mat-nav-list>
+</div>
