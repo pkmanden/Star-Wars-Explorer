@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { LayoutModule } from './layout/layout.module';
 import { PeopleModule } from './people/people.module';
 
@@ -20,7 +19,6 @@ import { PeopleModule } from './people/people.module';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
     LayoutModule,
     PeopleModule
   ],
