@@ -1,0 +1,7 @@
+<div>
+    <mat-nav-list role="list">
+        <a mat-list-item *ngFor='let movie of movieData; let i = index' [routerLink]="['/movie', (i+1)]"> 
+            {{ movie['title'] }} 
+        </a>
+    </mat-nav-list>
+</div>

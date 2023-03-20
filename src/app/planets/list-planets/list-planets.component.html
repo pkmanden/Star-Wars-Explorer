@@ -1,0 +1,7 @@
+<div>
+    <mat-nav-list role="list">
+        <a mat-list-item *ngFor='let planet of planetData; let i = index' [routerLink]="['/planet', (i+1)]"> 
+            {{ planet['name'] }} 
+        </a>
+    </mat-nav-list>
+</div>

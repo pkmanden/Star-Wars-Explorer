@@ -1,27 +1,32 @@
-<div *ngIf="details">
+<div *ngIf="details" class="p-details">
     <h1>{{details.name}}</h1>
-    <mat-list role="list">
-        <mat-list-item role="listitem">
+    <mat-list>
+        <mat-list-item>
             <span matListItemTitle>Height</span>
             <span matListItemLine>{{details.height}}</span>
         </mat-list-item>
-        <mat-list-item role="listitem">
+        <mat-divider></mat-divider>
+        <mat-list-item>
             <span matListItemTitle>Mass</span>
             <span matListItemLine>{{details.mass}}</span>
         </mat-list-item>
-        <mat-list-item role="listitem">
+        <mat-divider></mat-divider>
+        <mat-list-item>
             <span matListItemTitle>Hair Color</span>
             <span matListItemLine>{{details.hair_color}}</span>
         </mat-list-item>
-        <mat-list-item role="listitem">
+        <mat-divider></mat-divider>
+        <mat-list-item>
             <span matListItemTitle>Skin Color</span>
             <span matListItemLine>{{details.skin_color}}</span>
         </mat-list-item>
-        <mat-list-item role="listitem">
+        <mat-divider></mat-divider>
+        <mat-list-item>
             <span matListItemTitle>Gender</span>
             <span matListItemLine>{{details.gender}}</span>
         </mat-list-item>
-        <mat-list-item role="listitem">
+        <mat-divider></mat-divider>
+        <mat-list-item>
             <span matListItemTitle>Birth Year</span>
             <span matListItemLine>{{details.birth_year}}</span>
         </mat-list-item>

@@ -1,0 +1,14 @@
+<div *ngIf="details" class="pl-details">
+    <h1>{{details.name}}</h1>
+    <mat-list>
+        <mat-list-item>
+            <span matListItemTitle>Terrain</span>
+            <span matListItemLine>{{details.terrain}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span matListItemTitle>Population</span>
+            <span matListItemLine>{{details.population}}</span>
+        </mat-list-item>
+    </mat-list>
+</div>

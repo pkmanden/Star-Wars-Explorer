@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListPeopleComponent } from './list-people/list-people.component';
-
-import { MatLegacyListModule as MatListModule } from '@angular/material/legacy-list';
+import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { PeopleDetailsComponent } from './people-details/people-details.component';
 import { RouterModule } from '@angular/router';

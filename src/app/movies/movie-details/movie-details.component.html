@@ -1,0 +1,19 @@
+<div *ngIf="details" class="m-details">
+    <h1>{{details.title}}</h1>
+    <mat-list>
+        <mat-list-item>
+            <span matListItemTitle>Director</span>
+            <span matListItemLine>{{details.director}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span matListItemTitle>Producers</span>
+            <span matListItemLine>{{details.producer}}</span>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+            <span matListItemTitle>Release Date</span>
+            <span matListItemLine>{{details.release_date}}</span>
+        </mat-list-item>
+    </mat-list>
+</div>
