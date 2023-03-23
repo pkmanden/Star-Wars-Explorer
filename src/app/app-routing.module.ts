@@ -6,7 +6,9 @@ import { HomeComponent } from './layout/home/home.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, 
-  { path: 'people', loadChildren: () => import('./people/people.module').then(m => m.PeopleModule) }
+  { path: 'people', loadChildren: () => import('./people/people.module').then(m => m.PeopleModule) },
+  { path: 'movies', loadChildren: () => import('./movies/movies.module').then(m => m.MoviesModule) },
+  { path: 'planets', loadChildren: () => import('./planets/planets.module').then(m => m.PlanetsModule) }
 ];
 
 @NgModule({

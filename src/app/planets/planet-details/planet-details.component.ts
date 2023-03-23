@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 
@@ -7,7 +7,7 @@ import { ApiService } from 'src/app/api.service';
   templateUrl: './planet-details.component.html',
   styleUrls: ['./planet-details.component.css']
 })
-export class PlanetDetailsComponent {
+export class PlanetDetailsComponent implements OnInit {
   details: any ;
   id!: number;
   constructor(private activatedRoute: ActivatedRoute, private service: ApiService) { }
